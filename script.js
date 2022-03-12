@@ -37,4 +37,14 @@ console.log(a);
 var c = null;
 console.log(c);
 
+// operators
+var d = 45+78;
+var e = 400-380;
+var f = 600/300;
+var g = 544*5467;
+console.log(d,e,f,g);
+// operators make use of BODMAS(operator precedence).
+
+
+
 
