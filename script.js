@@ -93,6 +93,14 @@ console.log(true == 1); //true
 console.log(false == 0); //true
 console.log(true === 1,false === 0);//false false
 
+// conditional 
+// if else
+var myChild = ' Tawah Peggy',gender = 'female';
+if (gender==='female') {
+    console.log(myChild + ' is my daughter');
+} else{
+console.log(myChild + ' is my son');
+}
 
 
 
