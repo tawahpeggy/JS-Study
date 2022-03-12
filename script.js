@@ -168,7 +168,34 @@ else {
     console.log('you both failed');
 }
 
+// functions
+// function statements
+function passExam (name, score) {
+    var passUni = 71;
+    var passColl = 51;
+    if(score >= passUni) {
+        console.log(name + ' has enrolled in university with ' + score + ' points');
+    }
+    else if (score >= passColl) {
+        console.log(name + ' has enrolled in college with ' + score + ' points');
 
+    }
+    else {
+        console.log(name + ' has failed with ' + score + "points");
+    }
+}
+function calcScore (quizScore, essayScore) {
+    var score = quizScore + essayScore;
+    return score;
+}
+passExam('peggy',calcScore(30,40));
+passExam('mary',65);
+passExam('bob', 45)
 
+// function expression.
+var sum = function (a, b) {
+    console.log(a + b);
+}
+sum (20,30)
 
 
