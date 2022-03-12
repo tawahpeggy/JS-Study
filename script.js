@@ -104,7 +104,7 @@ console.log(myChild + ' is my son');
 }
 
 // if else if
-var prof = 'instructor';
+var prof = 'doctor';
 if (prof==='doctor') {
     console.log(prof + ' treates people');
 }
@@ -119,6 +119,31 @@ else if (prof === 'Director') {
 } else {    
     console.log( ' profession does not exist ' );
     
+} /* when the engine finds a matching conditon, it terminates 
+if else if block.so only one condition can
+ be correct at once atleast the first correct one will be returned */
+
+//  logical operators.(&&, ||, !)
+if(!true){
+    console.log('value is false');
+}
+else {
+    console.log('value is true');
+}
+if (5 === 5 && 4 === 4) {
+    console.log('condition is true');
+}
+if (5 === 4 && 5 === 4) {
+console.log('conditon 2 is true');
+} 
+if (5 === 5 || 5 === 6) {
+    console.log('condition 3 is true');
+}
+if (5===5 ==! 6===6) {
+    console.log("conditon 4 is true");
+}
+else {
+    console.log('condition is false');
 }
 
 
