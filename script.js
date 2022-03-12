@@ -93,7 +93,8 @@ console.log(true == 1); //true
 console.log(false == 0); //true
 console.log(true === 1,false === 0);//false false
 
-// conditional 
+// conditional statements
+
 // if else
 var myChild = ' Tawah Peggy',gender = 'female';
 if (gender==='female') {
@@ -101,6 +102,25 @@ if (gender==='female') {
 } else{
 console.log(myChild + ' is my son');
 }
+
+// if else if
+var prof = 'instructor';
+if (prof==='doctor') {
+    console.log(prof + ' treates people');
+}
+else if (prof === 'instructor') {
+    console.log(prof + ' teaches students');
+}
+else if (prof === 'composer') {
+    console.log(prof + ' composes music');
+}
+else if (prof === 'Director') {
+    console.log(prof + ' writes scripts');
+} else {    
+    console.log( ' profession does not exist ' );
+    
+}
+
 
 
 
