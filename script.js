@@ -49,12 +49,12 @@ console.log(d, e, f, g);
 //comparism operators
 var h = 5;
 var i = 5;
-console.log(h>i);
-console.log(h<i);
-console.log(h>=i);
-console.log(h<=i);
-console.log(h===i);
-console.log(h!==i);
+console.log(h > i);
+console.log(h < i);
+console.log(h >= i);
+console.log(h <= i);
+console.log(h === i);
+console.log(h !== i);
 
 if (h == i) {
     console.log("h is same as i with value : ", h);
@@ -91,21 +91,21 @@ console.log(5 === 5); //true
 console.log(5 === 5 === 5) //false
 console.log(true == 1); //true
 console.log(false == 0); //true
-console.log(true === 1,false === 0);//false false
+console.log(true === 1, false === 0);//false false
 
 // conditional statements
 
 // if else
-var myChild = ' Tawah Peggy',gender = 'female';
-if (gender==='female') {
+var myChild = ' Tawah Peggy', gender = 'female';
+if (gender === 'female') {
     console.log(myChild + ' is my daughter');
-} else{
-console.log(myChild + ' is my son');
+} else {
+    console.log(myChild + ' is my son');
 }
 
 // if else if
 var prof = 'doctor';
-if (prof==='doctor') {
+if (prof === 'doctor') {
     console.log(prof + ' treates people');
 }
 else if (prof === 'instructor') {
@@ -116,15 +116,15 @@ else if (prof === 'composer') {
 }
 else if (prof === 'Director') {
     console.log(prof + ' writes scripts');
-} else {    
-    console.log( ' profession does not exist ' );
-    
+} else {
+    console.log(' profession does not exist ');
+
 } /* when the engine finds a matching conditon, it terminates 
 if else if block.so only one condition can
  be correct at once atleast the first correct one will be returned */
 
 //  logical operators.(&&, ||, !)
-if(!true){
+if (!true) {
     console.log('value is false');
 }
 else {
@@ -134,16 +134,38 @@ if (5 === 5 && 4 === 4) {
     console.log('condition is true');
 }
 if (5 === 4 && 5 === 4) {
-console.log('conditon 2 is true');
-} 
+    console.log('conditon 2 is true');
+}
 if (5 === 5 || 5 === 6) {
     console.log('condition 3 is true');
 }
-if (5===5 ==! 6===6) {
+if (5 === 5 == !6 === 6) {
     console.log("conditon 4 is true");
 }
 else {
     console.log('condition is false');
+}
+
+// coding task 1 
+var johnScore = 80;
+var nickScore = 45;
+lowestPassScore = 51;
+if (johnScore >= lowestPassScore && nickScore >= lowestPassScore) {
+    console.log('congratulations you both passed');
+}
+else if (johnScore >= lowestPassScore || nickScore >= lowestPassScore) {
+    console.log('wow just one person passed');
+
+
+    if (johnScore > nickScore) {
+        console.log('named john with a total of ' + johnScore);
+    }
+    else {
+        console.log('named nick  with a total of ' + nickScore);
+    }
+}
+else {
+    console.log('you both failed');
 }
 
 
