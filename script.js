@@ -198,4 +198,33 @@ var sum = function (a, b) {
 }
 sum (20,30)
 
+// Array
 
+// defining an array using literal notation
+var arr = [
+    'john', 
+    'bob', 
+    'mary',
+     10, 
+     true,
+      [1,2,3],
+    //   pasing functions in arrays
+    function (name) {
+        return 'hello ' + name;
+    }
+    ];
+console.log(arr);
+console.log(arr.push({
+    name:'peggy', age:24
+}));
+
+// accessing array content usin index.
+console.log(arr[1]);
+
+// acess an array in an array
+console.log(arr[5][2]);
+console.log(arr[6](arr[0]));
+
+// creating an array using the array constructor
+var arrayName = new Array(1,'john', false);
+console.log(arrayName[2]);
