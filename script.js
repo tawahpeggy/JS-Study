@@ -228,3 +228,23 @@ console.log(arr[6](arr[0]));
 // creating an array using the array constructor
 var arrayName = new Array(1,'john', false);
 console.log(arrayName[2]);
+
+// array methods
+
+// update
+var colors = ['white','black','red'];
+colors[1] = 'green';
+// add item at end of an array
+colors.push('blue');
+// remove item at end of an array
+colors.pop();
+// remove item at beginning of an array
+colors.shift();
+// add items at beginning of an array
+colors.unshift('purple');
+// getting index of an item in an array
+console.log(colors.indexOf('red')); //returns -1 if item doesn't exist.
+if (colors.indexOf('blue') === -1){
+    console.log(colors.push('blue'));
+}
+console.log(colors);
