@@ -300,9 +300,25 @@ for (let i = 0; i < names.length; i++) {
     console.log(element);
     if (names[i] === 'peggy')  {
         console.log(names[i] + " is my sister");
-        continue; //prints all items except 'peggy' 
+        continue; //prints all items except 'peggy'. no code is ran after this line 
         break; // break when it meets 'peggy' 
         
     }
     
 }
+
+// while loops.
+var j = 0;
+while (j <= 10) {
+    j++;
+    console.log(j);
+}
+
+var numbers = [1,2,3,4];
+var i = 0;
+while (i <= numbers.length) {
+    console.log(i);
+    i++
+}
+
+// do while loop
