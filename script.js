@@ -328,3 +328,14 @@ do {
     console.log(nums[i]);
     i++;
 } while (i < numbers.length); //in do while loop, first iteration is always executed weather condition is right or wrong.
+
+// the date inbuilt object methods.
+var date = new Date();
+var year = date.getFullYear();
+var month = date.getMonth(); //months are 0 based meaning januar is 0 feb is 1 etc
+var day = date.getDay(); 
+ var hour = date.getHours(); 
+ var mins = date.getMinutes() 
+var millisecs = date.getMilliseconds();
+console.log(millisecs, mins,hour,day,month,year);
+console.log(date);
