@@ -292,3 +292,16 @@ people.myfunction(people.daughter.name,
 
 people.herFunction({daughterName : 'jessy', FatherName: 'micheal', DaughterAge: 3})    
 
+// loops
+// for loop
+var names = ['john','peggy','bob','micheal','salem','bercque'];
+for (let i = 0; i < names.length; i++) {
+    const element = names[i];
+    console.log(element);
+    if (names[i] === 'peggy')  {
+        console.log(names[i] + " is my sister");
+        
+    }
+    
+}
+// console.log(names);
