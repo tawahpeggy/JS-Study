@@ -248,3 +248,14 @@ if (colors.indexOf('blue') === -1){
     console.log(colors.push('blue'));
 }
 console.log(colors);
+
+// objects
+
+var person = new Object();
+person.firstName = 'john';
+person.lastName = 'smith' ;
+person['job'] = 'instructor';
+person.son = {};
+person.son.sex = 'male';
+person.son.age = 24;
+console.log(person, person.firstName, person.lastName);
