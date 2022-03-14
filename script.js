@@ -300,8 +300,9 @@ for (let i = 0; i < names.length; i++) {
     console.log(element);
     if (names[i] === 'peggy')  {
         console.log(names[i] + " is my sister");
+        continue; //prints all items except 'peggy' 
+        break; // break when it meets 'peggy' 
         
     }
     
 }
-// console.log(names);
