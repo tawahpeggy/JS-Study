@@ -322,3 +322,9 @@ while (i <= numbers.length) {
 }
 
 // do while loop
+var nums = [1,2,3,4];
+var i = 0;
+do {
+    console.log(nums[i]);
+    i++;
+} while (i < numbers.length); //in do while loop, first iteration is always executed weather condition is right or wrong.
