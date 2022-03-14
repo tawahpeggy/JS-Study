@@ -250,6 +250,8 @@ if (colors.indexOf('blue') === -1){
 console.log(colors);
 
 // objects
+// creating obects.
+// 1. using the constructor notation ie the "new" keyword.
 
 var person = new Object();
 person.firstName = 'john';
@@ -259,3 +261,34 @@ person.son = {};
 person.son.sex = 'male';
 person.son.age = 24;
 console.log(person, person.firstName, person.lastName);
+
+// 2.literal notation
+var people = {
+    firstname : 'tawah', 
+    lastname : 'peggy',
+    age : 24,
+    daughter: {
+        name:'mary',
+        age: 3,
+        class: 4
+    },
+    myfunction: function (daughterName, FatherName, DaughterAge){
+        console.log('Hello world!! ' + 
+        daughterName + ' is the daughter of ' + 
+        FatherName + ' and she is ' 
+        + DaughterAge + ' years old. '
+        );
+    },
+    herFunction: function(par){
+        console.log(   par.daughterName + ' is the daughter of ' + 
+        par.FatherName + ' and she is ' 
+        + par.DaughterAge + ' years old. ');
+    }
+};
+console.log(people);
+people.myfunction(people.daughter.name,
+    person.lastName + person.firstName,
+    people.daughter.age);
+
+people.herFunction({daughterName : 'jessy', FatherName: 'micheal', DaughterAge: 3})    
+
