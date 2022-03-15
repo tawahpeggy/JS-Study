@@ -170,10 +170,10 @@ else {
 
 // functions
 // function statements
-function passExam (name, score) {
+function passExam(name, score) {
     var passUni = 71;
     var passColl = 51;
-    if(score >= passUni) {
+    if (score >= passUni) {
         console.log(name + ' has enrolled in university with ' + score + ' points');
     }
     else if (score >= passColl) {
@@ -184,38 +184,38 @@ function passExam (name, score) {
         console.log(name + ' has failed with ' + score + "points");
     }
 }
-function calcScore (quizScore, essayScore) {
+function calcScore(quizScore, essayScore) {
     var score = quizScore + essayScore;
     return score;
 }
-passExam('peggy',calcScore(30,40));
-passExam('mary',65);
+passExam('peggy', calcScore(30, 40));
+passExam('mary', 65);
 passExam('bob', 45)
 
 // function expression.
 var sum = function (a, b) {
     console.log(a + b);
 }
-sum (20,30)
+sum(20, 30)
 
 // Array
 
 // defining an array using literal notation
 var arr = [
-    'john', 
-    'bob', 
+    'john',
+    'bob',
     'mary',
-     10, 
-     true,
-      [1,2,3],
+    10,
+    true,
+    [1, 2, 3],
     //   pasing functions in arrays
     function (name) {
         return 'hello ' + name;
     }
-    ];
+];
 console.log(arr);
 console.log(arr.push({
-    name:'peggy', age:24
+    name: 'peggy', age: 24
 }));
 
 // accessing array content usin index.
@@ -226,13 +226,13 @@ console.log(arr[5][2]);
 console.log(arr[6](arr[0]));
 
 // creating an array using the array constructor
-var arrayName = new Array(1,'john', false);
+var arrayName = new Array(1, 'john', false);
 console.log(arrayName[2]);
 
 // array methods
 
 // update
-var colors = ['white','black','red'];
+var colors = ['white', 'black', 'red'];
 colors[1] = 'green';
 // add item at end of an array
 colors.push('blue');
@@ -244,7 +244,7 @@ colors.shift();
 colors.unshift('purple');
 // getting index of an item in an array
 console.log(colors.indexOf('red')); //returns -1 if item doesn't exist.
-if (colors.indexOf('blue') === -1){
+if (colors.indexOf('blue') === -1) {
     console.log(colors.push('blue'));
 }
 console.log(colors);
@@ -255,7 +255,7 @@ console.log(colors);
 
 var person = new Object();
 person.firstName = 'john';
-person.lastName = 'smith' ;
+person.lastName = 'smith';
 person['job'] = 'instructor';
 person.son = {};
 person.son.sex = 'male';
@@ -264,25 +264,25 @@ console.log(person, person.firstName, person.lastName);
 
 // 2.literal notation
 var people = {
-    firstname : 'tawah', 
-    lastname : 'peggy',
-    age : 24,
+    firstname: 'tawah',
+    lastname: 'peggy',
+    age: 24,
     daughter: {
-        name:'mary',
+        name: 'mary',
         age: 3,
         class: 4
     },
-    myfunction: function (daughterName, FatherName, DaughterAge){
-        console.log('Hello world!! ' + 
-        daughterName + ' is the daughter of ' + 
-        FatherName + ' and she is ' 
-        + DaughterAge + ' years old. '
+    myfunction: function (daughterName, FatherName, DaughterAge) {
+        console.log('Hello world!! ' +
+            daughterName + ' is the daughter of ' +
+            FatherName + ' and she is '
+            + DaughterAge + ' years old. '
         );
     },
-    herFunction: function(par){
-        console.log(   par.daughterName + ' is the daughter of ' + 
-        par.FatherName + ' and she is ' 
-        + par.DaughterAge + ' years old. ');
+    herFunction: function (par) {
+        console.log(par.daughterName + ' is the daughter of ' +
+            par.FatherName + ' and she is '
+            + par.DaughterAge + ' years old. ');
     }
 };
 console.log(people);
@@ -290,21 +290,21 @@ people.myfunction(people.daughter.name,
     person.lastName + person.firstName,
     people.daughter.age);
 
-people.herFunction({daughterName : 'jessy', FatherName: 'micheal', DaughterAge: 3})    
+people.herFunction({ daughterName: 'jessy', FatherName: 'micheal', DaughterAge: 3 })
 
 // loops
 // for loop
-var names = ['john','peggy','bob','micheal','salem','bercque'];
+var names = ['john', 'peggy', 'bob', 'micheal', 'salem', 'bercque'];
 for (let i = 0; i < names.length; i++) {
     const element = names[i];
     console.log(element);
-    if (names[i] === 'peggy')  {
+    if (names[i] === 'peggy') {
         console.log(names[i] + " is my sister");
         continue; //prints all items except 'peggy'. no code is ran after this line 
         break; // break when it meets 'peggy' 
-        
+
     }
-    
+
 }
 
 // while loops.
@@ -314,7 +314,7 @@ while (j <= 10) {
     console.log(j);
 }
 
-var numbers = [1,2,3,4];
+var numbers = [1, 2, 3, 4];
 var i = 0;
 while (i <= numbers.length) {
     console.log(i);
@@ -322,7 +322,7 @@ while (i <= numbers.length) {
 }
 
 // do while loop
-var nums = [1,2,3,4];
+var nums = [1, 2, 3, 4];
 var i = 0;
 do {
     console.log(nums[i]);
@@ -333,9 +333,47 @@ do {
 var date = new Date();
 var year = date.getFullYear();
 var month = date.getMonth(); //months are 0 based meaning januar is 0 feb is 1 etc
-var day = date.getDay(); 
- var hour = date.getHours(); 
- var mins = date.getMinutes() 
+var day = date.getDay();
+var hour = date.getHours();
+var mins = date.getMinutes()
 var millisecs = date.getMilliseconds();
-console.log(millisecs, mins,hour,day,month,year);
+console.log(millisecs, mins, hour, day, month, year);
 console.log(date);
+// coding challenge
+var students = [
+    { name: 'john', score1: 47, score2: 46 },
+    { name: 'bob', score1: 23, score2: 24 },
+    { name: 'nick', score1: 40, score2: 35 },
+    { name: 'alex', score1: 44, score2: 45 }
+];
+var diploma = ['A', 'B', 'C', 'D', 'E'];
+
+var degrees = [91, 81, 71, 61, 51];
+
+function scoreFunction(scoreOf1, scoreOf2) {
+    var totalScore = scoreOf1 + scoreOf2
+
+    return totalScore;
+}
+function finalScore() {
+    for (var i = 0; i < students.length; i++) {
+
+        students[i].totalScore = scoreFunction(students[i].score1, students[i].score2
+        );
+        if (students[i].totalScores >= 51) {
+            console.log(students[i].name + ' passed final exam successfully: ');
+            
+            for (var x = 0; x < degrees.length; X++) {
+              
+                if (students[i].totalScores >= totalScores[x]) {
+                    
+                    console.log('he has ' + students[i].totalScores + 'points and he got diploma with degree ' + degrees[x]);
+                    break;
+                }
+            }
+        }
+
+    }
+}
+finalScore();
+console.log(students);
