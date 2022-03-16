@@ -362,11 +362,11 @@ function finalScore() {
         );
         if (students[i].totalScores >= 51) {
             console.log(students[i].name + ' passed final exam successfully: ');
-            
+
             for (var x = 0; x < degrees.length; X++) {
-              
+
                 if (students[i].totalScores >= totalScores[x]) {
-                    
+
                     console.log('he has ' + students[i].totalScores + 'points and he got diploma with degree ' + degrees[x]);
                     break;
                 }
@@ -377,3 +377,13 @@ function finalScore() {
 }
 finalScore();
 console.log(students);
+
+// lexical scope prove 
+var a = 1;
+function addValues(a, b) {
+    var sum = a + b;
+    console.log(sum);
+}
+
+var b = 8;
+addValues(a, b);
