@@ -384,6 +384,26 @@ function addValues(a, b) {
     var sum = a + b;
     console.log(sum);
 }
-
+var obj = {
+    name: 'nick',
+    b: function b() {
+        return 'Hi'
+    }
+}
 var b = 8;
 addValues(a, b);
+
+// execution context.
+var firstName = 'John';
+console.log(firstName);
+
+function ai() {
+    console.log('Hello');
+    bi();
+}
+function bi() {
+    console.log('Hi!')
+}
+ai();
+var lastName = 'smith';
+console.log(lastName);
