@@ -425,4 +425,10 @@ function c() {
     var name = 'nick';
 }
 
-a(); // strangely,output is nick bob john
+a(); // strangely,output is nick bob john.
+
+// Execution stack 
+function a() {
+    a();
+}
+a(); // outputs:maximum stack exeded
