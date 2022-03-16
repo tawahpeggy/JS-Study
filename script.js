@@ -407,3 +407,22 @@ function bi() {
 ai();
 var lastName = 'smith';
 console.log(lastName);
+
+
+// execution context 2
+function a() {
+    var name = 'john';
+    b();
+    console.log(name);
+}
+
+function b() {
+    var name = 'bob';
+    c();
+    console.log(name);
+}
+function c() {
+    var name = 'nick';
+}
+
+a(); // strangely,output is nick bob john
