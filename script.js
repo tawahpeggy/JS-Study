@@ -410,25 +410,49 @@ console.log(lastName);
 
 
 // execution context 2
-function a() {
+function av() {
     var name = 'john';
-    b();
+    bv();
     console.log(name);
 }
 
-function b() {
+function bv() {
     var name = 'bob';
-    c();
+    cv();
     console.log(name);
 }
-function c() {
+function cv() {
     var name = 'nick';
 }
 
-a(); // strangely,output is nick bob john.
+av(); // strangely,output is nick bob john.
 
 // Execution stack 
-function a() {
-    a();
+// function an() {
+//     an();
+// }
+// an(); // outputs:maximum stack exceded
+
+// scoping and scope chain
+var num1 = 5;
+function as() {
+    var num2 = 10;
+    function bs() {
+        var num3 = 15
+        console.log(num3 + num2 + num1);
+    }
+    bs();
 }
-a(); // outputs:maximum stack exeded
+as();
+
+// hoisting
+console.log(myName);
+function myAge() {
+    var myRealAge;
+    console.log(myRealAge);
+    myRealAge= 30;
+    console.log(myRealAge);
+    return 24;
+}
+var myName = 'tawah peggy';
+console.log(myAge());
