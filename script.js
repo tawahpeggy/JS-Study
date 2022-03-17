@@ -467,3 +467,14 @@ else {
 }
 console.log(where); //outputs: molyko
 console.log(town); // outputs: undefined
+
+// objects vs primitives.
+var c = {
+    name: 'john'
+
+};
+var d = c;
+c.age = 'nick';
+c = {
+    age  :  'bob'
+};
