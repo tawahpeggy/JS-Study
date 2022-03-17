@@ -456,3 +456,14 @@ function myAge() {
 }
 var myName = 'tawah peggy';
 console.log(myAge());
+
+// try and see.
+if (true) {
+    var where = 'molyko';
+    
+}
+else {
+   var town = 'Buea';
+}
+console.log(where); //outputs: molyko
+console.log(town); // outputs: undefined
