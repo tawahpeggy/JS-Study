@@ -482,3 +482,20 @@ c.age = 'nick';
 c = {
     age  :  'bob'
 };
+
+// the 'this' special keyword
+var firstName = 'bob';
+var per = {
+    firstName :'John',
+    lastName : 'smith',
+    getFullName :function () {
+        console.log(this===per);
+        function greet() {
+            console.log('hi' + this.firstName); // outputs hi undefined
+        }
+        greet();
+        console.log( per.firstName+ ' ' + per.lastName //here one can replace per with this.
+         ); 
+        }
+}
+console.log(per.getFullName());
