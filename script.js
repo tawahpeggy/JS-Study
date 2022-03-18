@@ -469,11 +469,15 @@ console.log(where); //outputs: molyko
 console.log(town); // outputs: undefined
 
 // objects vs primitives.
+var ao = 10;
+var bo = ao; //bo copies content of ao
+ao = 15;
+console.log(ao , bo);
 var c = {
     name: 'john'
 
 };
-var d = c;
+var d = c; // d becomes a reference for the object same as c
 c.age = 'nick';
 c = {
     age  :  'bob'
