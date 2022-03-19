@@ -501,9 +501,10 @@ var per = {
 console.log(per.getFullName());
 
 // Document Object Model
-// Select the eleent or group of elements that we want to effect
+
+// Select the element or group of elements that we want to effect
 // Decide the effect we want to apply to the selection
-var submit = document.getElementById('submit') 
+var submit = document.getElementById('submit')
 document.body.style.backgroundColor = 'blue';
 document.body.style.color = 'red';
 document.getElementById('btn').style.color = 'black';
@@ -519,6 +520,7 @@ const btn = document.getElementById('btn');
 let name = btn.nodeName;
 console.log(name);
 submit.style.fontSize = '1rem';
+submit.style.margin = ' 1rem ';
 submit.style.fontWeight = 'bold';
 submit.style.borderRadius = '1rem';
 submit.style.backgroundColor = 'yellow';
@@ -528,5 +530,26 @@ submit.style.padding = '.8rem';
 submit.style.width = '9rem';
 submit.style.boxShadow = '2px 3px 20px grey'; //offset-x, ofset-y,blur-radius,color
 
+// manipulating of DOM using classes.
+var special = document.getElementsByClassName('special');
+console.log(special);
+special[0] .style.color = 'black';
+special[1] .style.color = 'black';
+special[2] .style.color = 'black';
+special[0] .style.fontSize = '1.4rem';
 
+// Query selector
+const result = document.querySelector('#result');
+result.style.backgroundColor = 'green';
 
+const item = document.querySelectorAll('.special');
+console.log(item);
+
+const lastItem = document.querySelector('li:last-child');
+console.log(lastItem);
+
+list = document.querySelectorAll('.special');
+list.forEach(function(item){
+    console.log(item);
+    item.style.color =  'yellow';
+})
