@@ -553,3 +553,30 @@ list.forEach(function(item){
     console.log(item);
     item.style.color =  'yellow';
 })
+// var lis = querySelectorAll('li');
+// console.log(lis);
+// ChildNodes
+const allChildren = result.childNodes;
+console.log(allChildren);
+
+// Advance javascript.
+// Everything in js is an object except primitives.
+ var arr = [1,2,3];
+ arr[3] = 4;
+ arr.prop = 'Hello';
+ console.log(arr);
+
+//  function as special object
+ function aex() {
+     console.log('Hey babe');
+ }
+ aex['prop'] = "Hi";
+
+ aex.greetings = {
+     greet:'Hey Fatty'
+ };
+ aex.famousGreet = function () {
+     console.log(famousGreet);
+ }
+ aex();
+ console.log(aex.greetings);
