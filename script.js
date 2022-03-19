@@ -499,3 +499,34 @@ var per = {
         }
 }
 console.log(per.getFullName());
+
+// Document Object Model
+// Select the eleent or group of elements that we want to effect
+// Decide the effect we want to apply to the selection
+var submit = document.getElementById('submit') 
+document.body.style.backgroundColor = 'blue';
+document.body.style.color = 'red';
+document.getElementById('btn').style.color = 'black';
+document.getElementById('btn').style.backgroundColor = 'yellow';
+
+//assign to variable
+// const element = document.getElementById('element');
+const win = window;
+console.log(win.document.location);
+
+// return a node object or a node list,which is an arraylike object
+const btn = document.getElementById('btn');
+let name = btn.nodeName;
+console.log(name);
+submit.style.fontSize = '1rem';
+submit.style.fontWeight = 'bold';
+submit.style.borderRadius = '1rem';
+submit.style.backgroundColor = 'yellow';
+submit.style.color = 'rgba(0, 0, 0, 0.7)';
+submit.style.float = 'right';
+submit.style.padding = '.8rem';
+submit.style.width = '9rem';
+submit.style.boxShadow = '2px 3px 20px grey'; //offset-x, ofset-y,blur-radius,color
+
+
+
