@@ -580,3 +580,6 @@ console.log(allChildren);
  }
  aex();
  console.log(aex.greetings);
+
+//  creating object in a sophisticated way IE using function constructor.
+
