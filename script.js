@@ -562,8 +562,9 @@ console.log(allChildren);
 // Advance javascript.
 // Everything in js is an object except primitives.
  var arr = [1,2,3];
- arr[3] = 4;
+ arr[5] = 4;
  arr.prop = 'Hello';
+ arr.come = '1234'
  console.log(arr);
 
 //  function as special object
@@ -582,4 +583,11 @@ console.log(allChildren);
  console.log(aex.greetings);
 
 //  creating object in a sophisticated way IE using function constructor.
-
+function createPerson(lastname,firstname) {
+    var newPerson ={firstName:firstname,
+                     lastName: lastname};
+    console.log(newPerson);
+}
+createPerson('bob','smith');
+createPerson('Nathan','Joel');
+createPerson('tawah','peggy')
