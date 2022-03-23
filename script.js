@@ -582,7 +582,7 @@ console.log(allChildren);
  aex();
  console.log(aex.greetings);
 
-//  creating object in a sophisticated way IE using function constructor.
+//  creating object in a sophisticated way IE using functions 
 function createPerson(lastname,firstname) {
     var newPerson ={firstName:firstname,
                      lastName: lastname};
@@ -590,4 +590,6 @@ function createPerson(lastname,firstname) {
 }
 createPerson('bob','smith');
 createPerson('Nathan','Joel');
-createPerson('tawah','peggy')
+createPerson('tawah','peggy');
+
+//  we now use another method known as function construction IE using the new keyword.
