@@ -598,3 +598,15 @@ arr[3]=4;
 arr.name = 'peggy'; //arrays are objects
 console.log(arr.name);
 console.log(arr);
+
+function aiuy() {
+    console.log('hello!');
+}
+aiuy.obj = {
+    greet:'hey'
+}
+aiuy['prop'] = 'hi'
+aiuy.myFunc = function () {
+    console.log('hola');
+}
+aiuy();
