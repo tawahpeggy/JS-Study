@@ -582,7 +582,7 @@ console.log(allChildren);
  aex();
  console.log(aex.greetings);
 
-//  creating object in a sophisticated way IE using functions 
+//  creating object in a sophisticated way IE using functions(function constructors)
 function createPerson(lastname,firstname) {
     var newPerson ={firstName:firstname,
                      lastName: lastname};
@@ -599,6 +599,7 @@ arr.name = 'peggy'; //arrays are objects
 console.log(arr.name);
 console.log(arr);
 
+// fnctions are objects
 function aiuy() {
     console.log('hello!');
 }
@@ -610,3 +611,15 @@ aiuy.myFunc = function () {
     console.log('hola');
 }
 aiuy();
+
+// prototypes
+// never reassign value of __proto__ bc it breakes prottype chain
+// native prototypes prototype chains
+// prototype inheritance
+
+// Classes
+class myClass {
+    info(){
+        console.log('thanks');
+    }
+}
