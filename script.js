@@ -592,4 +592,9 @@ createPerson('bob','smith');
 createPerson('Nathan','Joel');
 createPerson('tawah','peggy');
 
-//  we now use another method known as function construction IE using the new keyword.
+// everything except primitive datatypes in javascript is an object.
+var arr = [1,2,3,]
+arr[3]=4;
+arr.name = 'peggy'; //arrays are objects
+console.log(arr.name);
+console.log(arr);
